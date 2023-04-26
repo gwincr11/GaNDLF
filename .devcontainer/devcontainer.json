@@ -12,7 +12,7 @@
 		"ghcr.io/devcontainers/features/python": {
 			"installJupyterlab": true
 		},
-		"ghcr.io/devcontainers-contrib/features/flake8:2": {}
+		// "ghcr.io/devcontainers-contrib/features/flake8:2": {} included in the universal image
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
