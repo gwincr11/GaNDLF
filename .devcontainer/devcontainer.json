@@ -6,14 +6,21 @@
 		"context": "..",
 		"dockerfile": "Dockerfile"
 	},
+		
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
 		"ghcr.io/devcontainers/features/python": {
 			"installJupyterlab": true
-		},
+		}
 		// "ghcr.io/devcontainers-contrib/features/flake8:2": {} included in the universal image
 	},
+		
+	// Make sure there's enough storage space to run the project
+	"hostRequirements": {
+		"storage": "50gb"
+	},
+		
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 		
